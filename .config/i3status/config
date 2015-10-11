@@ -9,13 +9,15 @@
 general {
         colors = true
 	color_good = "#6494b8"
-	color_bad = "#bababa" 
+	color_bad = "#FF632F"
         interval = 5
 }
 
 order += "wireless _first_"
 order += "ethernet _first_"
+order += "volume master"
 order += "battery 0"
+order += "cpu_usage"
 order += "load"
 order += "tztime local"
 
@@ -30,15 +32,22 @@ ethernet _first_ {
         format_down = "E: down"
 }
 
+volume master {
+  format = "♪: %volume"
+  format_muted = "♪: muted (%volume)"
+  device = "pulse"
+}
+
 battery 0 {
             format = "%status %percentage %remaining"
             last_full_capacity = true
 	    hide_seconds = true
             format_down = "No battery"
-            status_chr = "⚇ CHR"
+            status_chr = "☻ CHR"
             status_full = "☻ FULL"
             path = "/sys/class/power_supply/BAT0/uevent"
             low_threshold = 10
+	    threshold_type="percentage"
 }
 
 tztime local {
@@ -46,7 +55,7 @@ tztime local {
 }
 
 load {
-        format = "%1min"
+        format = "%1min %5min %15min"
 }
 
 disk "/" {
