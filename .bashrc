@@ -8,6 +8,7 @@
 # Variables
 PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] '
 PATH=$PATH:/home/loux/netbeans-8.0.2/bin/
+export STEAM_FRAME_FORCE_CLOSE=1
 
 # Aliases 
 test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"

@@ -39,7 +39,7 @@ bindsym $mod+Return exec xterm -rv
 bindsym $mod+Shift+A kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -b
 
 # change focus
 bindsym $mod+j focus left
@@ -126,6 +126,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 1 -5%
 bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 1 +5%
 bindsym XF86AudioMute exec /usr/bin/pactl set-sink-mute 1 toggle
+bindsym XF86MonBrightnessDown exec /usr/bin/light -r -U 20
+bindsym XF86MonBrightnessUp exec /usr/bin/light -r -A 20
+bindsym $mod+w exec /usr/bin/firefox
+bindsym $mod+x exec /usr/bin/thunar
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
