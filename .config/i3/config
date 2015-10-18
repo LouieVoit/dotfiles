@@ -8,7 +8,7 @@ set $mod Mod4
 # Font
 #..........
 
-font pango:DejaVu Sans Mono 8
+font pango:GohuFont Regular 9
 
 #..........
 # Look
@@ -168,4 +168,10 @@ bar {
 		separator #ffa6a6
 	}
 }
+
+# Window specific settings
+
+assign [class="Steam"] 4
+
+for_window [class="Steam"] floating enable
 
