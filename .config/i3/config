@@ -33,7 +33,7 @@ client.background       #ffffff
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm -rv
+bindsym $mod+Return exec xterm
 
 # kill focused window
 bindsym $mod+Shift+A kill
