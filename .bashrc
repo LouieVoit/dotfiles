@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 #Variables
-export PATH=$PATH:/home/loux/Documents/netbeans-8.0.2/bin/
+export PATH=$PATH:/home/loux/Documents/netbeans-8.0.2/bin/:$(ruby -rubygems -e "puts Gem.user_dir")/bin
 export STEAM_FRAME_FORCE_CLOSE=1
 #export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] '
 export PS1='\[\e[01;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[01;32m\]\$\[\e[m\] '
