@@ -1,10 +1,5 @@
-! Every shell is a login shell by default (for inclusion of all necessary environment variables)
 xterm*loginshell: true
-
-! I like a LOT of scrollback...
 xterm*savelines: 2000 
-
-! Tango Theme
 
 XTerm*background: #1C1C1C
 XTerm*foreground: #DEDEDE
@@ -34,10 +29,6 @@ XTerm*color14 : #34E2E2
 XTerm*color7  : #D3D7CF
 XTerm*color15 : #EEEEEC
 
-! right hand side scrollbar...
 xterm*rightScrollBar: true
 xterm*ScrollBar: true
-
-! stop output to terminal from jumping down to bottom of scroll again
 xterm*scrollTtyOutput: false
-

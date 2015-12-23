@@ -171,7 +171,4 @@ bar {
 
 # Window specific settings
 
-assign [class="Steam"] 4
-
-for_window [class="Steam"] floating enable
 
