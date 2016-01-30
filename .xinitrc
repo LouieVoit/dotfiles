@@ -34,6 +34,7 @@ fi
 
 numlockx &
 sh /home/loux/.fehbg &
+xset b off
 ## Thinkpad scrolling
 xprop() { xinput set-prop "TPPS/2 IBM TrackPoint" "$@"; }
 

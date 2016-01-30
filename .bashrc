@@ -6,7 +6,6 @@
 [[ $- != *i* ]] && return
 
 #Variables
-PATH=$PATH:/home/loux/Documents/netbeans-8.0.2/bin/
 PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
 PATH=$PATH:$HOME/Documents/scilab-5.5.2/bin
 export STEAM_FRAME_FORCE_CLOSE=1
@@ -25,3 +24,14 @@ alias egrep='egrep --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+##-ANSI-COLOR-CODES-##
+Color_Off="\[\033[0m\]"
+###-Regular-###
+Red="\[\033[0;31m\]"
+Green="\[\033[0;32m\]"
+Purple="\[\033[0;35\]"
+####-Bold-####
+BRed="\[\033[1;31m\]"
+BPurple="\[\033[1;35m\]"
+PS1="$BRed\u$Color_Off@$Green\h$Color_Off:$BPurple\w$Color_Off \$ "

@@ -1,34 +1,58 @@
-xterm*loginshell: true
-xterm*savelines: 2000 
+!! Solarized colors
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
 
-XTerm*background: #1C1C1C
-XTerm*foreground: #DEDEDE
+*background:            S_base03
+*foreground:            S_base0
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
 
-! black
-XTerm*color0  : #2E3436
-XTerm*color8  : #555753
-! red
-XTerm*color1  : #CC0000
-XTerm*color9  : #EF2929
-! green
-XTerm*color2  : #4E9A06
-XTerm*color10 : #8AE234
-! yellow
-XTerm*color3  : #C4A000
-XTerm*color11 : #FCE94F
-! blue
-XTerm*color4  : #3465A4
-XTerm*color12 : #729FCF
-! magenta
-XTerm*color5  : #75507B
-XTerm*color13 : #AD7FA8
-! cyan
-XTerm*color6  : #06989A
-XTerm*color14 : #34E2E2
-! white
-XTerm*color7  : #D3D7CF
-XTerm*color15 : #EEEEEC
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
 
-xterm*rightScrollBar: true
-xterm*ScrollBar: true
-xterm*scrollTtyOutput: false
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
+
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15:               S_base3
+

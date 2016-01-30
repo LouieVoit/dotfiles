@@ -9,21 +9,19 @@ set $mod Mod4
 #..........
 
 font pango:GohuFont Regular 7
+
 #..........
 # Look
 #..........
 
-new_window pixel 4
-new_float pixel 4
+new_window pixel 3
+new_float pixel 3
 
 # class                 border  backgr. text    indicator
-client.focused          #4c7899 #285577 #ffffff #2e9ef4
-client.focused_inactive #333333 #5f676a #ffffff #484e50
-client.unfocused        #333333 #222222 #888888 #292d2e
-client.urgent           #2f343a #900000 #ffffff #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000
+client.focused          #b58900  #b58900 #fdf6e3 #2e9ef4
+client.focused_inactive #268bd2 #268bd2 #fdf6e3 #484e50
+client.unfocused        #333333 #93a1a1 #fdf6e3 #292d2e
 
-client.background       #ffffff
 #..........
 # Bindings
 #..........
@@ -122,11 +120,11 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # local bindings
-bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 1 -5%
-bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 1 +5%
-bindsym XF86AudioMute exec /usr/bin/pactl set-sink-mute 1 toggle
-bindsym XF86MonBrightnessDown exec /usr/bin/light -r -U 20
-bindsym XF86MonBrightnessUp exec /usr/bin/light -r -A 20
+#bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 1 -5%
+#bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 1 +5%
+#bindsym XF86AudioMute exec /usr/bin/pactl set-sink-mute 1 toggle
+#bindsym XF86MonBrightnessDown exec /usr/bin/light -r -U 20
+#bindsym XF86MonBrightnessUp exec /usr/bin/light -r -A 20
 bindsym $mod+w exec /usr/bin/firefox
 bindsym $mod+x exec /usr/bin/thunar
 
@@ -162,10 +160,15 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
         position top
-	separator_symbol "|\o/|"
-	colors {
-		separator #ffa6a6
-	}
+	separator_symbol "#"
+        colors {
+            # solarized
+            background #002b36
+            statusline #eee8d5
+            focused_workspace #cb4b16 #cb4b16 #eee8d5
+            active_workspace  #cb4b16 #cb4b16 #eee8d5
+            inactive_workspace #b58900 #b58900 #eee8d5
+        }
 }
 
 # Window specific settings
