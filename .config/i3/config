@@ -23,6 +23,10 @@ client.focused_inactive #268bd2 #268bd2 #fdf6e3 #484e50
 client.unfocused        #333333 #93a1a1 #fdf6e3 #292d2e
 
 #..........
+# i3 personnal
+#..........
+focus_follows_mouse no
+#..........
 # Bindings
 #..........
 
@@ -120,11 +124,6 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # local bindings
-#bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 1 -5%
-#bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 1 +5%
-#bindsym XF86AudioMute exec /usr/bin/pactl set-sink-mute 1 toggle
-#bindsym XF86MonBrightnessDown exec /usr/bin/light -r -U 20
-#bindsym XF86MonBrightnessUp exec /usr/bin/light -r -A 20
 bindsym $mod+w exec /usr/bin/firefox
 bindsym $mod+x exec /usr/bin/thunar
 
