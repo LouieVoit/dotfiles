@@ -14,13 +14,14 @@ font pango:GohuFont Regular 7
 # Look
 #..........
 
-new_window pixel 3
-new_float pixel 3
+new_window pixel 1
+new_float pixel 1
 
 # class                 border  backgr. text    indicator
-client.focused          #b58900  #b58900 #fdf6e3 #2e9ef4
-client.focused_inactive #268bd2 #268bd2 #fdf6e3 #484e50
-client.unfocused        #333333 #93a1a1 #fdf6e3 #292d2e
+client.focused          #4c7899 #0073ad #ffffff #ffffff
+client.focused_inactive #333333 #333333 #ffffff #484e50
+client.unfocused        #333333 #111111 #888888 #292d2e
+client.urgent           #2f343a #ffff00 #ffffff #900000
 
 #..........
 # i3 personnal
@@ -160,14 +161,15 @@ bar {
         status_command i3status
         position top
 	separator_symbol "#"
-        colors {
-            # solarized
-            background #002b36
-            statusline #eee8d5
-            focused_workspace #cb4b16 #cb4b16 #eee8d5
-            active_workspace  #cb4b16 #cb4b16 #eee8d5
-            inactive_workspace #b58900 #b58900 #eee8d5
-        }
+	colors {
+	        background #000000
+	        statusline #ffffff
+
+        	focused_workspace  #ffffff #285577
+	        active_workspace   #ffffff #333333
+	        inactive_workspace #888888 #222222
+        	urgent_workspace   #ffffff #900000
+    	}
 }
 
 # Window specific settings
