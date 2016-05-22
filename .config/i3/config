@@ -17,12 +17,6 @@ font pango:GohuFont Regular 7
 new_window pixel 1
 new_float pixel 1
 
-# class                 border  backgr. text    indicator
-client.focused          #4c7899 #0073ad #ffffff #ffffff
-client.focused_inactive #333333 #333333 #ffffff #484e50
-client.unfocused        #333333 #111111 #888888 #292d2e
-client.urgent           #2f343a #ffff00 #ffffff #900000
-
 #..........
 # i3 personnal
 #..........
