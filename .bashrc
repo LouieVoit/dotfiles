@@ -7,8 +7,7 @@
 
 #Variables
 PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
-PATH=$PATH:$HOME/Documents/scilab-5.5.2/bin
-PATH=$PATH:$HOME/Documents/netbeans-8.1/bin
+PATH=$PATH:/home/loux/bin
 #
 export STEAM_FRAME_FORCE_CLOSE=1
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
