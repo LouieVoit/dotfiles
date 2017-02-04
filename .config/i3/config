@@ -8,7 +8,7 @@ set $mod Mod4
 # Font
 #..........
 
-font pango:GohuFont Regular 7
+font pango:Gohu GohuFont 8
 
 #..........
 # Look

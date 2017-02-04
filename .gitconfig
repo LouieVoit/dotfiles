@@ -1,7 +1,8 @@
 [user]
-	name = danetteCafe
-	email = lvviot@live.com
 [alias]
-	lg = log --decorate --oneline --graph --all
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
 	default = simple
+[user]
+	name = danetteCafe
+	email = louis.viot314@gmail.com
