@@ -1,42 +1,19 @@
-! Every shell is a login shell by default (for inclusion of all necessary environment variables)
-xterm*loginshell: true
-
-! I like a LOT of scrollback...
-xterm*savelines: 16384
-
-! double-click to select whole URLs :D
-xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
-
-! stop output to terminal from jumping down to bottom of scroll again
-xterm*scrollTtyOutput: false
-
-! color
-
-XTerm*background: #0F0F0F
-XTerm*foreground: #DEDEDE
-
-! black
-XTerm*color0  : #2E3436
-XTerm*color8  : #555753
-! red
-XTerm*color1  : #CC0000
-XTerm*color9  : #EF2929
-! green
-XTerm*color2  : #4E9A06
-XTerm*color10 : #8AE234
-! yellow
-XTerm*color3  : #C4A000
-XTerm*color11 : #FCE94F
-! blue
-XTerm*color4  : #3465A4
-XTerm*color12 : #729FCF
-! magenta
-XTerm*color5  : #75507B
-XTerm*color13 : #AD7FA8
-! cyan
-XTerm*color6  : #06989A
-XTerm*color14 : #34E2E2
-! white
-XTerm*color7  : #D3D7CF
-XTerm*color15 : #EEEEEC
-
+*.font: Courier
+*.foreground: #F8F8F2
+*.background: #282A36
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+*.color15: #E6E6E6

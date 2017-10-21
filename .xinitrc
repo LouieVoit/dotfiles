@@ -34,9 +34,5 @@ fi
 
 numlockx &
 sh /home/loux/.fehbg &
-xset b off
-xset -dpms
-xset s off
-/home/loux/Documents/sct/sct 4800 &
 exec i3
 

@@ -7,9 +7,7 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-	color_good = "#6494b8"
-	color_bad = "#FF632F"
+        colors = false
         interval = 5
 }
 
@@ -18,24 +16,12 @@ order += "disk /home"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "volume master"
-order += "cpu_temperature 0"
-order += "cpu_temperature 1"
-order += "cpu_temperature 2"
 order += "cpu_usage"
 order += "load"
 order += "tztime local"
 
-cpu_temperature 0 {
-}
-
-cpu_temperature 1 {
-}
-
-cpu_temperature 2 {
-}
-
 wireless _first_ {
-        format_up = "W: %ip (%quality %essid)"
+        format_up = "W: %ip%quality %essid"
         format_down = "W: down"
 }
 
@@ -66,3 +52,5 @@ disk / {
 disk /home {
         format = "%used/%total"
 }
+
+
